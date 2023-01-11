@@ -1,0 +1,474 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html { 
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1C1C1C;
+    color: white;
+}
+
+/* Redesign link our way */
+a {
+  text-decoration: none;
+  color: #8ab4f8;
+}
+
+.container {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.topnav {
+    overflow: hidden;
+    height: 10vh; 
+    line-height: 5vh;
+}
+
+.topnav a {
+    color: white;
+}
+
+.store-title {
+    font-weight: bold;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+ 
+.nav-link {
+  font-weight: bold;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+
+.search-wrapper {
+    display:inline-block;
+    padding: 6px;
+    background-color: #494949;
+    border-radius: 25px;
+    outline: none;
+    color: white;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    line-height: 5vh;
+}
+
+.search-wrapper button {
+    background-color: transparent;
+    border: none;
+    color: rgb(128, 128, 128);
+    height: 2.1rem;
+    display: inline;
+    transition: all 0.3s ease; /* Add transition for hover effects */
+}
+
+.searchbox {
+    background-color:transparent;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 15px;
+    color: white;
+}
+
+.searchbox:focus, input:focus{
+    background-color:transparent;
+    outline: none;
+}
+
+.topnav-right {
+    float: right;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a, .searchbar {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+}
+
+.grid-section{
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.grid-item {
+    width: 47.5%;
+    margin: 1%;
+}
+
+.grid-product-item {
+  width: 25%;
+  margin: 1%;
+  background-color: #2e2e2e;
+  padding: 3vh;
+  border-radius: 2vh;
+}
+
+.category-bg {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid-item {
+        width: 100%;
+        margin: 1.5%;
+    }
+}
+
+/* Carousel */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.carousel-img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.floatbtn-wrapper{
+	position:fixed;
+	width:10vh;
+	height:10vh;
+	bottom:4vh;
+	right:4vh;
+    background-color: rgba(100%, 100%, 100%, 20%);
+    backdrop-filter: blur(10px);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+
+.floatbt{
+    padding: 3vh;
+    font-size: 4vh;
+}
+
+.product-co-card {
+    background-color: #313131;
+    width: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 25px;
+}
+
+.Product-info-grid {
+  width: 75%;
+  padding-left: 2vh;
+}
+
+.Product-pic-grid {
+  width: 25%;
+}
+
+.product-thumbnail {
+  width: 75%;
+  height: auto;
+}
+
+.product-overview-desc {
+  color: #bbbbbb;
+}
+
+.form-section {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.form-input-underline {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 4vh;
+  border-bottom: 2px solid #bdbdbd;
+  color: white;
+}
+
+.form-input-underline:focus {
+  border-bottom: 2px solid #8ab4f8;
+  color: white;
+}
+
+.half-widht-grid {
+  width: 47.5%;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+}
+
+.form-single {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.paymenthod-grid {
+  width: 20%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.paymenthod-button {
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.paypal-btn {
+  background-color: #3b7bbf;
+  color: white;
+}
+
+.gpay-btn {
+  background-color: white;
+  color: black;
+}
+
+{
+  background
+.card-btnd-color: rgb(43, 43, 43);
+  color: rgb(160, 160, 160);
+}
+
+.btn_solid-main {
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 255px;
+}
+
+.product-overview-title  {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.product-thumbnail-home {
+  width: 65%;
+  height: auto;
+}
+
+.useracc_banner {
+  background-color: #2e2e2e;
+  color: white; 
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
+}
+
+.form-box {
+	position: absolute;
+	font-size: 15px;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.login-form {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.search-banner {
+  background-color: #2e2e2e;
+  color: white; 
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  text-align: center;
+}
+
+.product-spec-body {
+  white-space: pre-line;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.product-tile-link {
+  text-decoration: none;
+  color: white;
+}
+
+.product-picture-preview {
+  width: 45%;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn_solid-lessround {
+    border-radius: 1px;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 255px;
+}
+
+.le-footer {
+  background-color: #2e2e2e;
+  padding-left: 14.5%;
+  padding-right: 14.5%;
+  padding-top: 10%;
+  padding-bottom: 3%;
+  margin-top: 3%;
+  width: 100%;
+}
+
+.item-action-button {
+  margin-top: 2%;
+}
+
+.item-action-button a {
+  padding-right: 3%;
+}
+
+.gimme-some-space {
+  margin-top: 1%;
+}
+
+.dropdown-button {
+  color: white;
+  background-color: #1C1C1C;
+}
+
+.form-textarea-underline {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 10%;
+  border-bottom: 2px solid #bdbdbd;
+  color: white;
+}
